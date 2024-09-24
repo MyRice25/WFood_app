@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.HistoryFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16_dsa"
+            android:layout_marginTop="@dimen/dp_16_dsa"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/recent_buy"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ryc_recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8_dsa"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100_dsa"
+                android:layout_marginStart="@dimen/dp_8_dsa"
+                android:layout_marginEnd="@dimen/dp_8_dsa"
+                android:layout_marginTop="@dimen/dp_8_dsa"
+                android:layout_marginBottom="@dimen/dp_8_dsa"
+                app:cardCornerRadius="@dimen/dp_16_dsa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/recentbuyitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_8_dsa">
+
+                    <ImageView
+                        android:id="@+id/img_buy_recent"
+                        android:layout_width="@dimen/dp_64_dsa"
+                        android:layout_height="@dimen/dp_64_dsa"
+                        android:layout_marginStart="@dimen/dp_8_dsa"
+                        android:layout_marginTop="@dimen/dp_8_dsa"
+                        android:layout_marginBottom="@dimen/dp_8_dsa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:src="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16_dsa"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/food_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14_dsa"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_price"
+                        app:layout_constraintStart_toEndOf="@+id/img_buy_recent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="@string/_7"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/sp_20_dsa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/txt_name"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/orderStatus"
+                        android:layout_width="@dimen/dp_32_dsa"
+                        android:layout_height="@dimen/dp_32_dsa"
+                        android:layout_marginEnd="64dp"
+                        app:cardBackgroundColor="#C6C6C6"
+                        app:cardCornerRadius="@dimen/dp_22_dsa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.033" />
+
+                    <Button
+                        android:id="@+id/btn_received"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:backgroundTint="@color/textColor"
+                        android:layout_marginTop="@dimen/dp_4_dsa"
+                        android:text="@string/received"
+                        app:layout_constraintEnd_toEndOf="@+id/orderStatus"
+                        app:layout_constraintStart_toStartOf="@+id/orderStatus"
+                        app:layout_constraintTop_toBottomOf="@+id/orderStatus" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16_dsa"
+            android:layout_marginTop="@dimen/dp_16_dsa"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/previously_buy"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ryc_recent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ryc_buy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            tools:listitem="@layout/item_buy_again"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

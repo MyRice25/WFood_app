@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DetailsActivity">
+
+    <ImageButton
+        android:id="@+id/icBack"
+        android:layout_width="@dimen/dp_32_dsa"
+        android:layout_height="@dimen/dp_32_dsa"
+        android:layout_marginStart="@dimen/dp_16_dsa"
+        android:layout_marginTop="@dimen/dp_16_dsa"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/txt_detailsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_italic"
+        android:text="@string/food_name"
+        android:textSize="@dimen/sp_24_dsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icBack" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_150_dsa"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        app:cardCornerRadius="@dimen/dp_16_dsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_detailsName">
+
+        <ImageView
+            android:id="@+id/imgDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:text="@string/short_description"
+        android:fontFamily="@font/lato_italic"
+        android:textSize="@dimen/sp_20_dsa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/txt_Description"
+        android:layout_width="@dimen/dp_365_dsa"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/lato_italic"
+        android:layout_marginTop="@dimen/dp_8_dsa"
+        android:text="@string/Details"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredients"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato_italic"
+        android:textSize="@dimen/sp_20_dsa"
+        app:layout_constraintStart_toStartOf="@+id/txt_Description"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Description" />
+
+    <TextView
+        android:id="@+id/txt_Ingredient"
+        android:layout_width="@dimen/dp_365_dsa"
+        android:layout_height="wrap_content"
+        android:text="@string/strowberry_ncream_nwheat"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/lato_italic"
+        android:layout_marginTop="@dimen/dp_8_dsa"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddToCartDetails"
+        android:layout_width="@dimen/dp_265_dsa"
+        android:layout_height="@dimen/dp_57_dsa"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_to_cart"
+        android:textSize="@dimen/sp_16_dsa"
+        android:textAllCaps="false"
+        android:background="@drawable/green_btn"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Ingredient" />
+</androidx.constraintlayout.widget.ConstraintLayout>

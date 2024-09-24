@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.ChooseLocationActivity">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_italic"
+        android:layout_marginStart="@dimen/dp_16_dsa"
+        android:layout_marginTop="@dimen/dp_44_dsa"
+        android:text="@string/choose_your_location"
+        android:textSize="@dimen/sp_24_dsa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_dsa"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="@dimen/dp_16_dsa"
+        android:layout_marginStart="@dimen/dp_16_dsa"
+        android:layout_marginEnd="@dimen/dp_16_dsa"
+        app:endIconDrawable="@drawable/arrow_down"
+        app:endIconTint="@color/black"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        <AutoCompleteTextView
+            android:id="@+id/listOfLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lato_regular"
+            android:inputType="none"
+            android:text="@string/choose_location"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_32_dsa"
+        android:fontFamily="@font/lato_italic"
+        android:text="@string/Details"
+        android:textSize="@dimen/sp_20_dsa"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:padding="@dimen/dp_16_dsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_32_dsa"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/design_by_nneatroots"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_16_dsa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

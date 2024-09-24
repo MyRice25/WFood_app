@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_8_dsa"
+    android:paddingEnd="@dimen/dp_8_dsa"
+    android:background="@color/white"
+    tools:context=".Fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_editProfile"
+            android:backgroundTint="@color/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dp_24_dsa"
+            android:text="@string/edit_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_57_dsa"
+            android:layout_marginStart="@dimen/dp_8_dsa"
+            android:layout_marginTop="@dimen/dp_16_dsa"
+            android:layout_marginEnd="@dimen/dp_8_dsa"
+            android:background="@drawable/profileeditshape"
+            android:elevation="@dimen/dp_2_dsa"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_0_dsa"
+                android:layout_height="@dimen/dp_47_dsa"
+                android:layout_marginStart="@dimen/dp_16_dsa"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold_italic"
+                android:gravity="center_vertical"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16_dsa" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="text"
+                android:text="@string/lorem_ipsum"
+                android:textSize="@dimen/sp_14_dsa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_57_dsa"
+            android:layout_marginStart="@dimen/dp_8_dsa"
+            android:layout_marginTop="@dimen/dp_16_dsa"
+            android:layout_marginEnd="@dimen/dp_8_dsa"
+            android:background="@drawable/profileeditshape"
+            android:elevation="@dimen/dp_2_dsa"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_0_dsa"
+                android:layout_height="@dimen/dp_47_dsa"
+                android:layout_marginStart="@dimen/dp_16_dsa"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold_italic"
+                android:gravity="center_vertical"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16_dsa" />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6_dsa"
+                android:layout_marginBottom="@dimen/dp_6_dsa"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textMultiLine"
+                android:text="@string/_123_street_ward_district"
+                android:textSize="@dimen/sp_14_dsa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_57_dsa"
+            android:layout_marginStart="@dimen/dp_8_dsa"
+            android:layout_marginTop="@dimen/dp_16_dsa"
+            android:layout_marginEnd="@dimen/dp_8_dsa"
+            android:background="@drawable/profileeditshape"
+            android:elevation="@dimen/dp_2_dsa"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_0_dsa"
+                android:layout_height="@dimen/dp_47_dsa"
+                android:layout_marginStart="@dimen/dp_16_dsa"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold_italic"
+                android:gravity="center_vertical"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16_dsa" />
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="textEmailAddress"
+                android:text="@string/lorem_ipsum_gmail_com"
+                android:textSize="@dimen/sp_14_dsa" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_57_dsa"
+            android:layout_marginStart="@dimen/dp_8_dsa"
+            android:layout_marginTop="@dimen/dp_16_dsa"
+            android:layout_marginEnd="@dimen/dp_8_dsa"
+            android:layout_marginBottom="@dimen/dp_16_dsa"
+            android:background="@drawable/profileeditshape"
+            android:elevation="@dimen/dp_2_dsa"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_0_dsa"
+                android:layout_height="@dimen/dp_47_dsa"
+                android:layout_marginStart="@dimen/dp_16_dsa"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato_bold_italic"
+                android:gravity="center_vertical"
+                android:text="@string/phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16_dsa" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="phone"
+                android:text="@string/_123456789"
+                android:textSize="@dimen/sp_14_dsa" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_saveInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_57_dsa"
+        android:elevation="@dimen/dp_6_dsa"
+        android:layout_marginBottom="@dimen/dp_32_dsa"
+        android:background="@drawable/proceed_btn"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dp_8_dsa"
+        android:layout_marginEnd="@dimen/dp_8_dsa"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp_14_dsa"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/save_information" />
+
+</FrameLayout>

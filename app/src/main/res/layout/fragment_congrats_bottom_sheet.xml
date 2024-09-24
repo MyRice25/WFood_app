@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.CongratsBottomSheet">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_100_dsa"
+            android:fontFamily="@font/lato_italic"
+            android:text="@string/congrats_n_your_order_placed"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_30_dsa" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginTop="@dimen/dp_32_dsa"
+            android:layout_width="@dimen/dp_250_dsa"
+            android:layout_height="@dimen/dp_250_dsa"
+            android:layout_gravity="center"
+            android:src="@drawable/accept2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btngohome"
+            android:background="@drawable/green_btn"
+            android:layout_marginTop="@dimen/dp_64_dsa"
+            android:layout_width="@dimen/dp_180_dsa"
+            android:layout_height="@dimen/dp_57_dsa"
+            android:layout_gravity="center"
+            android:fontFamily=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16_dsa"
+            android:text="@string/go_home" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>
