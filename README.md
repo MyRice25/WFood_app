@@ -17,8 +17,6 @@
 
 - ✅ Kotlin + Jetpack Compose
 - ✅ MVVM Architecture
-- ✅ LiveData / State Management
-- ✅ Retrofit (call API)
 - ✅ Firebase (save data on Firebase)
 
 ## 📸 User Interface (will be updated later)
