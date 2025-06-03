@@ -21,7 +21,7 @@
 
 ## 📸 User Interface (will be updated later)
 
-> *Interface images will be updated when development is complete.*
+![logo WFoodApp] (https://github.com/MyRice25/WFood_app/blob/master/screenshot_1748947265.png?raw=true)
 
 ---
 
